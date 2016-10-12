@@ -36,10 +36,11 @@ export default class DestinyApiRequest extends ApiRequest {
     buildRequest() {
         let request = super.buildRequest();
         let destinyApiRequest = function destinyApiRequest() {
+            this.addHeader('X-API-Key', apiKey);
             return request(...arguments)
                 .then(DestinyApiResponse.unwrap)
                 .catch(DestinyApiResponse.error);
-        };
+        }.bind(this);
         return this.appendRequestMetadata(destinyApiRequest);
     }
 }
