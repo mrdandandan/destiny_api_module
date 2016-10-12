@@ -1,4 +1,4 @@
 ```
 import {DestinyApiRequest} from 'mrdandandan-destiny-api-module';
-DestinyApiRequest.setApiKey = '<bungienet-api-key>'
+DestinyApiRequest.setApiKey('<bungienet-api-key>')
 ```
