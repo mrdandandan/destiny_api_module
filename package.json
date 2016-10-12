@@ -1,0 +1,29 @@
+{
+  "name": "mrdandandan-destiny-api-module",
+  "version": "0.0.0",
+  "description": "Destiny API definitions for *",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdandandan/destiny_api_module.git"
+  },
+  "author": "Daniel Miller <npm@dannymiller.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrdandandan/destiny_api_module/issues"
+  },
+  "homepage": "https://github.com/mrdandandan/destiny_api_module#readme",
+  "dependencies": {
+    "api-request-base": "latest"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
