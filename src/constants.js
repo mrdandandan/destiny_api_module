@@ -7,6 +7,7 @@ const PARAMETERS = {
     DISPLAY_NAME: 'displayName',
     GROUP_ID: 'groupId',
     INVENTORY_ITEM_HASH: 'inventoryItemHash',
+    ITEM_INSTANCE_ID: 'itemInstanceId',
     MEMBERSHIP_ID: 'membershipId',
     MEMBERSHIP_TYPE: 'membershipType',
     MODE: 'mode',

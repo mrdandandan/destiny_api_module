@@ -54,6 +54,16 @@ export default {
             PARAMETERS.CHARACTER_ID
         ]
     }).buildRequest(),
+    characterItemDetails: new DestinyApiRequest({
+        path: `{${PARAMETERS.MEMBERSHIP_TYPE}}/Account/{${PARAMETERS.MEMBERSHIP_ID}}/Character/{${PARAMETERS.CHARACTER_ID}}/Inventory/{${PARAMETERS.ITEM_INSTANCE_ID}}`,
+        routeBinding: `:${PARAMETERS.MEMBERSHIP_TYPE}/:${PARAMETERS.MEMBERSHIP_ID}/:${PARAMETERS.CHARACTER_ID}/:${PARAMETERS.ITEM_INSTANCE_ID}`,
+        requiredParameters: [
+            PARAMETERS.MEMBERSHIP_TYPE,
+            PARAMETERS.MEMBERSHIP_ID,
+            PARAMETERS.CHARACTER_ID,
+            PARAMETERS.ITEM_INSTANCE_ID
+        ]
+    }).buildRequest(),
     characterInventorySummary: new DestinyApiRequest({
         path: `{${PARAMETERS.MEMBERSHIP_TYPE}}/Account/{${PARAMETERS.MEMBERSHIP_ID}}/Character/{${PARAMETERS.CHARACTER_ID}}/Inventory/Summary`,
         routeBinding: `:${PARAMETERS.MEMBERSHIP_TYPE}/:${PARAMETERS.MEMBERSHIP_ID}/:${PARAMETERS.CHARACTER_ID}`,
