@@ -5,6 +5,7 @@ import group from './endpoints/group';
 import manifest from './endpoints/manifest';
 import search from './endpoints/search';
 import stats from './endpoints/stats';
+import user from './endpoints/user';
 
 export {
     DestinyApiRequest
@@ -16,5 +17,6 @@ export default {
     group,
     manifest,
     search,
-    stats
+    stats,
+    user
 };
