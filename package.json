@@ -1,6 +1,6 @@
 {
   "name": "mrdandandan-destiny-api-module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Destiny API definitions for *",
   "main": "dist/index.js",
   "scripts": {
