@@ -10,5 +10,13 @@ export default {
             PARAMETERS.MEMBERSHIP_TYPE
         ],
         isPlatformRequest: false
+    }).buildRequest(),
+    getBungieNetUserById: new DestinyApiRequest({
+        path: `User/GetBungieNetUserById/{${PARAMETERS.MEMBERSHIP_ID}}`,
+        routeBinding: `:${PARAMETERS.MEMBERSHIP_ID}`,
+        requiredParameters: [
+            PARAMETERS.MEMBERSHIP_ID
+        ],
+        isPlatformRequest: false
     }).buildRequest()
 };

@@ -6,7 +6,7 @@ import url from 'url';
 
 let apiKey = '';
 export default class DestinyApiRequest extends ApiRequest {
-    constructor({isPlatformRequest = true, path, routeBinding, requiredParameters = [], method = METHOD.GET}) {
+    constructor({isPlatformRequest = true, path, routeBinding, requiredParameters = [], method = METHOD.GET, platform = API_PLATFORM.D1}) {
         super({
             path,
             routeBinding,
@@ -16,7 +16,7 @@ export default class DestinyApiRequest extends ApiRequest {
 
         let baseUrl = API_URL;
         if (isPlatformRequest) {
-            baseUrl = url.resolve(baseUrl, API_PLATFORM);
+            baseUrl = url.resolve(baseUrl, platform);
         }
         // Cheesy hack because wtf node
         if (baseUrl[baseUrl.length - 1] !== '/') {

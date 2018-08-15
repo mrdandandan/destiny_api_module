@@ -1,5 +1,8 @@
 const API_URL = 'http://www.bungie.net/Platform/';
-const API_PLATFORM = 'Destiny';
+const API_PLATFORM = {
+    D1: 'Destiny',
+    D2: 'Destiny2'
+};
 
 const PARAMETERS = {
     ACTIVITY_ID: 'activityId',

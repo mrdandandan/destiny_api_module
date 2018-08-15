@@ -7,6 +7,8 @@ import search from './endpoints/search';
 import stats from './endpoints/stats';
 import user from './endpoints/user';
 
+import d2 from './endpoints/d2';
+
 export {
     DestinyApiRequest
 }
@@ -18,5 +20,7 @@ export default {
     manifest,
     search,
     stats,
-    user
+    user,
+
+    d2
 };
